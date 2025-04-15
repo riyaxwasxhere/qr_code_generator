@@ -1,0 +1,115 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    font-family : 'Gilroy';
+}
+html, body {
+    height: 100%;
+    width : 100%;
+}
+img{
+    height: 20px;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background: #1d1c21;
+    position: relative;
+}
+
+.container{
+    width: 90%;
+    max-width: 440px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.container h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #1d1c21;
+}
+
+.container.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid #002741;
+}
+
+.input input{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    flex: 1;
+}
+
+.generate{
+    border: #0099ff;
+    width: 360px;
+    background-color: #0099ff;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 2px;
+    margin-top: 15px;
+}
+
+.generate img{
+    height: 25px;
+}
+
+.imgBox{
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+.qrImage{
+    width: 100%;
+    padding: 10px;
+}
+
+.showQR{
+    max-height: 300px;
+    margin: 10px auto;
+}
+
+.error{
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
