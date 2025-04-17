@@ -8,9 +8,7 @@ html, body {
     height: 100%;
     width : 100%;
 }
-img{
-    height: 20px;
-}
+
 .main{
     height: 100%;
     width: 100%;
@@ -36,7 +34,7 @@ img{
     color: #1d1c21;
 }
 
-.container.input{
+.input{
     display: flex;
     align-items: center;
     justify-content: center;
